@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: hsla(238, 100%, 71%, 1);
+
+  background: linear-gradient(
+    120deg,
+    hsla(238, 100%, 71%, 1) 0%,
+    hsla(295, 100%, 84%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    120deg,
+    hsla(238, 100%, 71%, 1) 0%,
+    hsla(295, 100%, 84%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    120deg,
+    hsla(238, 100%, 71%, 1) 0%,
+    hsla(295, 100%, 84%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+    transform: translatey(-25%);
+}
+
+.clock-container {
+  display: flex;
+}
+
+.card {
+  width: min(18vw, 8rem);
+  height: min(22vw, 10rem);
+  margin: min(0.1rem, 0.5rem);
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1b26a1a2, #f560dc);
+  box-shadow: 2px 2px 5px #1b26a1a2, -2px -2px 5px #848fff;
+  font-size: min(10vw, 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.semicolon {
+  align-self: center;
+  font-size: min(10vw, 4rem);
+  color: rgb(110, 10, 10);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.ap {
+  align-self: flex-end;
+  top: 60%;
+  height: min(10vw, 4rem);
+  width: min(8vw, 3.5rem);
+  margin: 0.5rem;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #1b26a1a2, #f560dc);
+  box-shadow: 2px 2px 5px #1b26a1a2, -2px -2px 5px #848fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: min(3vw, 1.5rem);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.date-container {
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: min(3vw, 1.5rem);
+  line-height: 1.2em;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px #00000054, -2px 3px 5px #00000054;
+}
+
+.weekDay {
+    padding: 0.1rem;
+    margin: 0.3rem;
+    font-weight: bold;
+    font-size: min(5vw, 2rem);
+    color: rgb(255, 255, 0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.733);
+}
+
+.date {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.733);
+}
