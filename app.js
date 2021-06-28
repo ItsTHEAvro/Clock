@@ -26,10 +26,14 @@ function showTime() {
 
   let period = date.getHours() >= 12 ? 'pm' : 'am';
   AP.textContent = period;
-
-  WeekDay.textContent = date.getDayName();
-
-  FullDate.textContent = date.getDate();
+  
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  let dayName = days[date.getDay()];
+  WeekDay.textContent = dayName;
+  
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let dateFormatted = monthNames[date.getMonth()]+" "+date.getDate()+", "+date.getFullYear();
+  FullDate.textContent = dateFormatted;
 }
 
 showTime();
